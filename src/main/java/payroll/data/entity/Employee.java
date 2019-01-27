@@ -1,4 +1,4 @@
-package payroll;
+package payroll.data.entity;
 
 import lombok.Data;
 
@@ -8,14 +8,14 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-class Employee {
+public class Employee {
 
 	private @Id @GeneratedValue Long id;
 	private String firstName;
 	private String lastName;
 	private String role;
 
-	Employee(String firstName, String lastName, String role) {
+	public Employee(String firstName, String lastName, String role) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.role = role;

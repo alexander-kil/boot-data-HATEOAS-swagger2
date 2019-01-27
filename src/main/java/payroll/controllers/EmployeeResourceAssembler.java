@@ -1,10 +1,12 @@
-package payroll;
-
-import static org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
+package payroll.controllers;
 
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceAssembler;
 import org.springframework.stereotype.Component;
+import payroll.data.entity.Employee;
+
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Component
 class EmployeeResourceAssembler implements ResourceAssembler<Employee, Resource<Employee>> {

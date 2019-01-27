@@ -1,10 +1,13 @@
-package payroll;
-
-import static org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
+package payroll.controllers;
 
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceAssembler;
 import org.springframework.stereotype.Component;
+import payroll.data.Status;
+import payroll.data.entity.Order;
+
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
+import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @Component
 class OrderResourceAssembler implements ResourceAssembler<Order, Resource<Order>> {
