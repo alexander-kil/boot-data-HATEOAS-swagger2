@@ -1,1 +1,1 @@
-web: java -jar -DPORT="5000" target/from-spring-links-0.0.1-SNAPSHOT.jar
+web: java -jar target/from-spring-links-0.0.1-SNAPSHOT.jar
