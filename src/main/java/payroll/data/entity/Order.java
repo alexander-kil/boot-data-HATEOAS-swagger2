@@ -1,6 +1,7 @@
 package payroll.data.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import payroll.data.Status;
 
 import javax.persistence.Entity;
@@ -10,6 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Data
+@NoArgsConstructor
 @Table(name = "CUSTOMER_ORDER")
 public class Order {
 
